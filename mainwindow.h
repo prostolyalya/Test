@@ -2,9 +2,9 @@
 #define MAINWINDOW_H
 #include <QTreeWidgetItem>
 #include <QMainWindow>
-#include "treemodel.h"
-#include "dbconnector.h"
-#include "dialog_add.h"
+#include "headers/treemodel.h"
+#include "headers/dbconnector.h"
+#include "headers/dialog_add.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui {

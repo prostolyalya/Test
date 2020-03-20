@@ -16,23 +16,23 @@ DEFINES += QT_DEPRECATED_WARNINGS
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
-    dbconnector.cpp \
-    dialog_add.cpp \
+    sources/dbconnector.cpp \
+    sources/dialog_add.cpp \
     main.cpp \
     mainwindow.cpp \
-    treeitem.cpp \
-    treemodel.cpp
+    sources/treeitem.cpp \
+    sources/treemodel.cpp
 
 HEADERS += \
-    dbconnector.h \
-    dialog_add.h \
+    headers/dbconnector.h \
+    headers/dialog_add.h \
     mainwindow.h \
-    treeitem.h \
-    treemodel.h
+    headers/treeitem.h \
+    headers/treemodel.h
 
 FORMS += \
-    dialog_add.ui \
-    mainwindow.ui
+    mainwindow.ui \
+    sources/dialog_add.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
