@@ -61,11 +61,11 @@ color: rgb(255, 255, 255);</string>
      <enum>Qt::ScrollBarAlwaysOn</enum>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton">
+   <widget class="QPushButton" name="pushButton_add">
     <property name="geometry">
      <rect>
       <x>420</x>
-      <y>510</y>
+      <y>490</y>
       <width>41</width>
       <height>41</height>
      </rect>
