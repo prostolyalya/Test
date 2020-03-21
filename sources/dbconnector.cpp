@@ -53,7 +53,8 @@ QList<DBConnector::listCountry> DBConnector::getAll()
     {
         if (el.key() == "" || el.key() == "0")
         {
-            operators.remove((el).key());
+            QString key = el.key();
+            operators.remove(key);
             el = operators.begin();
             continue;
         }
@@ -63,12 +64,14 @@ QList<DBConnector::listCountry> DBConnector::getAll()
         QString country = query.value(2).toString();
         if (country.isEmpty())
         {
-            operators.remove((el).key());
+            QString key = el.key();
+            operators.remove(key);
             el = operators.begin();
             continue;
         }
         res.append({ country, code, operators.values(el.key()) });
-        operators.remove((el).key());
+        QString key = el.key();
+        operators.remove(key);
         el = operators.begin();
     }
 
